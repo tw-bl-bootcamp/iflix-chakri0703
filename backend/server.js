@@ -29,6 +29,4 @@ mongoose.connect(dbConfig.url, {
     process.exit();
 })
 mongoose.set('useCreateIndex', true);
-console.log("port in server==>", server._connectionKey);
-
 module.exports = server
