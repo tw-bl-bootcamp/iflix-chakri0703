@@ -20,7 +20,7 @@ exports.login = (data, callback) => {
             console.log("error in mongodb", err);
             return callback(err);
         }
-        if (result.length == 0) {
+        if (result.length== 0) {
             console.log("no user exist");
 
             return callback(null, "no user exist")

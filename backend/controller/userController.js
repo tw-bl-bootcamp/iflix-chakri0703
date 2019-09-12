@@ -8,6 +8,8 @@ exports.login = (req, res) => {
         res.status(500).send(errors[0].msg)
     }
     else {
+        console.log("checking body in comtroller==>",req.body);
+        
         service.login(req.body, (err, result) => {
             if (err) {
                 let response = {
