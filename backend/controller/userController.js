@@ -14,7 +14,7 @@ exports.login = (req, res) => {
             if (err) {
                 let response = {
                     'status': 500,
-                    'msg': 'err',
+                    'msg': 'error while login',
                     'data': err
                 }
                 res.send(response);

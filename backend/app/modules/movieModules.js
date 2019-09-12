@@ -25,7 +25,7 @@ exports.getListMovies=(callback)=>{
     movies.find((err,result)=>{
         if(err){
             console.log("error in module==>",err);
-            return callback(null);
+            return callback(err);
         }
         if(result.length!=0){
             console.log("movie List is Empty");

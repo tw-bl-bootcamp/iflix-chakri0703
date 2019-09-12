@@ -9,7 +9,9 @@ const theaters=mongoose.Schema({
         type:Date,
         require:[true,"time is required"]
     }],
-
+    seats:[{
+        type:Number,
+    }]
 })
 let theater=mongoose.model('theaters',theaters);
 
@@ -17,7 +19,7 @@ exports.getAllTheaters=(data,callback)=>{
     theater.find({title:data.title},(err,result)=>{
         if(err){
             console.log("error in dbs ==>",err);
-           return callback(null);
+           return callback(err);
         }
         if(result.length==0){
             console.log("movie doesnot exists ");
