@@ -1,0 +1,25 @@
+<div fxLayout="column" fxLayoutAlign="center center" >
+  <h2>
+    Login Page
+  </h2>
+<mat-card fxFlex="100%">
+
+<div class="Email" fxLayout="column" fxLayoutAlign="center center">
+        <mat-form-field appearance="outline" style="width: 20vw">
+          <mat-label>Email</mat-label>
+          <input matInput placeholder="Placeholder" [formControl]="email">
+          <mat-error *ngIf='email.invalid'>{{getEmailErrorMessage()}}</mat-error>
+        </mat-form-field>
+</div>
+<div class="Password" fxLayout="column" fxLayoutAlign="center center">
+    <mat-form-field appearance="outline" style="width: 20vw">
+      <mat-label>Password</mat-label>
+      <input matInput placeholder="Placeholder" [formControl]="password">
+      <mat-error *ngIf='password.invalid'>{{getPasswordErrorMessage()}}</mat-error>
+    </mat-form-field>
+</div>
+<div class="login-button" fxLayoutAlign="center center">
+    <button mat-flat-button color="primary">Login</button>
+  </div>
+</mat-card>
+</div>
