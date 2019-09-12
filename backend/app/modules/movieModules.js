@@ -16,15 +16,7 @@ const movie=mongoose.Schema({
     catagory:{
         type:String,
         required:[true,"catagory is required"]
-    },
-    venue:{
-        type:String,
-        required:[true,"venue is required"]
-    },
-    time:[{
-        type:Date,
-        required:[true,"time is required"]
-    }]
+    }
 })
 
 var movies=mongoose.model('movies',movie);
