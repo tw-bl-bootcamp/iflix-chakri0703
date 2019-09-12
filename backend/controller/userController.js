@@ -15,7 +15,7 @@ exports.login = (req, res) => {
                 let response = {
                     'status': 500,
                     'msg': 'err',
-                    'msg': err
+                    'data': err
                 }
                 res.send(response);
             }
@@ -28,4 +28,3 @@ exports.login = (req, res) => {
         })
     }
 }
-
