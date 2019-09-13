@@ -1,0 +1,16 @@
+
+<div>
+    <mat-toolbar style="align-items: center">Select Theater</mat-toolbar>
+</div>
+<div fxLayout="column" fxLayoutAlign="space-evenly center" style="margin-top: 5vh" >
+<div *ngFor="let movie of movies">
+    <mat-card fxFlex="900px" style="height: 200px;margin-top:3vh" (click)="showTheaters()">
+    <mat-card-title>{{theater.name}}</mat-card-title>
+     
+    <div>
+        time:{{theater.time}}
+    </div>
+    </mat-card>
+</div>
+    
+</div>

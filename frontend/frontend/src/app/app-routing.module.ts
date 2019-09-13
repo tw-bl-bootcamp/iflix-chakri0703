@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent} from './component/login/login.component';
-import { from } from 'rxjs';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
+import { TheaterComponent } from './component/theater/theater.component';
 
 const routes: Routes = [
 {
@@ -13,6 +13,9 @@ const routes: Routes = [
 },
 {
   path:'dashboard',component:DashboardComponent
+},
+{
+  path:'theater',component:TheaterComponent
 }
 ];
 

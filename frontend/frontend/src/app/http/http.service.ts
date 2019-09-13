@@ -17,7 +17,7 @@ export class HttpService {
     return response;
   }
   get(url){
-    return this.httpClient.get('http://localhost:3000/moviesList');
+    return this.httpClient.get('http://localhost:3000/'+url);
   }
 }
 

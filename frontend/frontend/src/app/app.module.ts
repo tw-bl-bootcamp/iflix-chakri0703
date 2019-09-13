@@ -12,12 +12,14 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {HttpClientModule} from '@angular/common/http';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { TheaterComponent } from './component/theater/theater.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     DashboardComponent,
+    TheaterComponent,
 
   ],
   imports: [
