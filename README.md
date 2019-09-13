@@ -22,9 +22,9 @@ _TBD Please update as per stack choices being used in your private project repo_
 * CSS 3
 
 ### Frameworks
-* Springboot / Nodejs / Express
-* React / Angular
-* JUnit 5 / Mockito / Mocha
+*  Nodejs / Express
+*Angular
+*  Mocha
 
 ### Infra
 * MongoDB
@@ -36,7 +36,7 @@ _TBD - Please enter the commands to build, test and run the app at the very leas
 * Build
 
 ```
-
+sh Dependency.sh
 ```
 
 * Test
@@ -48,7 +48,7 @@ _TBD - Please enter the commands to build, test and run the app at the very leas
 * Deploy
 
 ```
-
+npm start
 ```
 
 * Run
