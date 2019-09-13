@@ -48,11 +48,11 @@ sh Dependency.sh
 * Deploy
 
 ```
-npm start
+
 ```
 
 * Run
 
 ```
-
+npm start
 ```
