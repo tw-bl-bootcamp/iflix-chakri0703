@@ -44,7 +44,7 @@ export class LoginComponent implements OnInit {
       (response:any)=>{
         console.log("login respone==>",response);
         this.matSnackBar.open('login Sucessfull','End Now ',{duration:4000})
-        this.route.navigate(['/login']);
+        this.route.navigate(['/dashboard']);
       },
       error=>{
         console.log("error in login===>",error);

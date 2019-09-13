@@ -1,9 +1,9 @@
 const book=require('../app/modules/booked');
 
 exports.bookedSeats=(data,callback)=>{
-    data.updateSeats={$addToSet:{seats:{$each:data.seats}}}
+    let updateSeats={$push:{seats:{$each:data.seats}}}
 
-    book.bookedSeats(data,(err,result)=>{
+    book.bookedSeats(data,updateSeats,(err,result)=>{
         if(err){
             console.log("error in bookedService");
           return callback(err);

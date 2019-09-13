@@ -1,0 +1,26 @@
+<div>
+    <mat-toolbar style="align-items: center">Select Movie</mat-toolbar>
+</div>
+<div fxLayout="column" fxLayoutAlign="space-evenly center" style="margin-top: 5vh" >
+<div *ngFor="let movie of movies">
+    <mat-card fxFlex="900px" style="height: 200px;margin-top:3vh" (click)="showTheaters()">
+    <mat-card-title>{{movie.title}}</mat-card-title>
+     
+    <div>
+        review:{{movie.review}}
+    </div>
+    <div style="margin-top: 8vh">
+
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-between center" >
+       <div fxLayout="column" fxLayoutAlign="space-between center" >
+            catagory:{{movie.catagory}}        
+        </div>
+        <div fxLayout="column" fxLayoutAlign="space-between center" >
+         rating:{{movie.rating}}         
+        </div>
+    </div>
+    </mat-card>
+</div>
+    
+</div>

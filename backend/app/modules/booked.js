@@ -1,6 +1,10 @@
 const mongoose=require('mongoose');
 
 var booked=mongoose.Schema({
+    email:{
+        type:String,
+        required:[true,'email is required']
+    },
     title:{
         type:String,
         required:[true,'title is required']
@@ -16,13 +20,17 @@ var booked=mongoose.Schema({
 
 var book=mongoose.model('booked',booked);
 
-exports.bookedSeats=(data,callback)=>{
-    book.updateOne({title:data.title,time:data.time},data.updateSeats,(err,result)=>{
+exports.bookedSeats=(data,updateSeats,callback)=>{
+    book.updateOne({title:data.title,time:data.time},updateSeats,(err,result)=>{
         if(err){
             console.log("error in updating seats===>",err);
          return callback(err);
         }
         else{
+            // console.log(book.find());
+            
+            console.log("data modified");
+            
             return callback(null,result);
         }
     })

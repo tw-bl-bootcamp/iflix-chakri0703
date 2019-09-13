@@ -6,7 +6,7 @@ const theater=require('../controller/theaterController');
 const bookseat=require('../controller/bookedSeatsController');
 //login
 router.post('/login', controller.login);
-router.post('/moviesList',movieController.getAllMovies);
+router.get('/moviesList',movieController.getAllMovies);
 router.post('/theaterList',theater.getAllTheaters);
 router.post('/bookSeat',bookseat.bookController);
 module.exports = router;

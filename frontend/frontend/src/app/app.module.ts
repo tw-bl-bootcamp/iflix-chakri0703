@@ -10,10 +10,15 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule ,ReactiveFormsModule} from '@angular/forms';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {HttpClientModule} from '@angular/common/http';
+import { DashboardComponent } from './component/dashboard/dashboard.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    DashboardComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -28,6 +33,7 @@ import {HttpClientModule} from '@angular/common/http';
     ReactiveFormsModule,
     MatSnackBarModule,
     HttpClientModule,
+    MatToolbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
