@@ -17,7 +17,6 @@ The main User Requirements for the online app were captured in the following car
 _TBD Please update as per stack choices being used in your private project repo_
 
 ### Languages
-* Java
 * Javascript
 * HTML 5
 * CSS 3
@@ -29,10 +28,7 @@ _TBD Please update as per stack choices being used in your private project repo_
 
 ### Infra
 * MongoDB
-* MySQL
-* RabbitMQ
-* Redis
-* Jenkins
+
 
 ## Useful Commands
 _TBD - Please enter the commands to build, test and run the app at the very least below_
