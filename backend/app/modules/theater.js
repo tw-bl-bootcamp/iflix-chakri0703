@@ -21,7 +21,7 @@ const theaters=mongoose.Schema({
 let theater=mongoose.model('theaters',theaters);
 
 exports.getAllTheaters=(data,callback)=>{
-    theater.find({title:data.title},(err,result)=>{
+    theater.find({},(err,result)=>{
         if(err){
             console.log("error in dbs ==>",err);
            return callback(err);

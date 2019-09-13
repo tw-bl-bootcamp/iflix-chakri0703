@@ -18,7 +18,9 @@ export class TheaterComponent implements OnInit {
   getTheaters(){
     this.service.getAllTheaters().subscribe(
       (response:any)=>{
-        localStorage.setItem('theaters',response.data);
+        console.log("data in response==>",response.data);
+        
+        localStorage.setItem('theater',JSON.stringify(response.data));
       },
       error=>{
         console.log("error in theater list==>",error);
@@ -26,5 +28,8 @@ export class TheaterComponent implements OnInit {
       }
     )
   }
+  theaters:any=JSON.parse(localStorage.getItem('theater'));
+  
+  
 
 }
